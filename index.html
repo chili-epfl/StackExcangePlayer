@@ -1,0 +1,32 @@
+<head>
+    <link href="http://vjs.zencdn.net/5.17.0/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/5.17.0/video.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="fonctions.js"></script>
+    <script type="text/javascript" src="fonction_stopWord.js"></script>
+    <link rel="stylesheet" type="text/css" href="Style/style.css">
+    <script type='text/javascript' src='https://api.stackexchange.com/js/2.0/all.js'></script>
+    <script src="http://players.brightcove.net/videojs-overlay/1/videojs-overlay.min.js"></script>
+
+
+</head>
+
+<body>
+    
+    
+    <!-- Configuration -->
+    <br />
+    <form name="config">
+    <select name="choice" onchange="diri()">
+    <option>Configuration : Par defaut</option> 
+    <option>Configuration : Help</option>
+    <option>Configuration : Pause</option>
+    <option>Configuration : Time</option>
+    </select>
+    </form>
+
+    <!-- VIDEO PLAYER -->
+    <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup="{}">
+    <source src="uploads/lecture2.1.mp4" type='video/mp4'></video>
+    <script type="text/javascript" src="index.js"></script>
+</body>
