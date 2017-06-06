@@ -124,7 +124,7 @@
         }
 
         player.on('pause', function() {
-            SendActivity('2', player.currentTime()); 
+            SendActivity('video pause', player.currentTime()); 
             time = player.currentTime();
             console.log("pause : " + time);
             if (configPause){
